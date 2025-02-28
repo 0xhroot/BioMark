@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- Fill the circle with the primary color (light blue) -->
+    <solid android:color="@color/primaryColor" />
+    <!-- Optional: Add a stroke for a border -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/primaryColor" />
+</shape>
