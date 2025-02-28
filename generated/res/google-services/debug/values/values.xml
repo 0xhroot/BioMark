@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">341598769978</string>
+    <string name="google_api_key" translatable="false">AIzaSyBSVVSbL-HuhIZFB9IPEX31hQ8jzQTDr3M</string>
+    <string name="google_app_id" translatable="false">1:341598769978:android:ab7ba78382b79d169ab603</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBSVVSbL-HuhIZFB9IPEX31hQ8jzQTDr3M</string>
+    <string name="google_storage_bucket" translatable="false">biomark-7b709.firebasestorage.app</string>
+    <string name="project_id" translatable="false">biomark-7b709</string>
+</resources>
