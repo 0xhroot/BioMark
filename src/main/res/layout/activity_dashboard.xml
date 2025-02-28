@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentColor">
+
+    <!-- Default Profile Image -->
+    <ImageView
+        android:id="@+id/dashboard_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/default_profile"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Mark Attendance Button -->
+    <Button
+        android:id="@+id/dashboard_mark_attendance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mark Attendance"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/accentColor"
+        app:layout_constraintTop_toBottomOf="@id/dashboard_profile_image"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/dashboard_edit_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/accentColor"
+        app:layout_constraintTop_toBottomOf="@id/dashboard_mark_attendance"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/dashboard_logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@color/accentColor"
+        app:layout_constraintTop_toBottomOf="@id/dashboard_edit_profile"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.biomark">
+
+    <!-- Required Permissions -->
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+
+
+
+
+    <!-- Optional: If background location is required -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Biomark"
+        tools:targetApi="31">
+
+        <!-- Launcher Activity is set to LoginActivity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Dashboard Activity -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".MarkAttendanceActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="true"/>
+
+
+        <!-- Firebase Login Activities -->
+        <activity
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:exported="true"/>
+        <activity
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:exported="true"/>
+
+        <!-- Firebase Services -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notification_color"/>
+
+        <!-- Camera Permission for Face Recognition -->
+        <meta-data
+            android:name="android.hardware.camera"
+            android:value="true"/>
+
+        <!-- Firebase Auth Web Client ID -->
+        <meta-data
+            android:name="com.google.android.gms.auth.api.identity"
+            android:value="@string/default_web_client_id"/>
+
+    </application>
+</manifest>
